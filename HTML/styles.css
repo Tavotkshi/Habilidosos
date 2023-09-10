@@ -1,0 +1,458 @@
+
+/* Ajustamos el tamaño de la pagina e inicializamos pag blanco*/
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cuerpo de la pagina, mandejanmos el color, fondo, tamaños de letra etc. */
+body{
+
+    background: #ffff;
+    background-color: #19151d;
+    background-color: #121014;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%238057c2' fill-opacity='0.47'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+/* Salto de linea de la navegación */
+hr{
+   margin: 10px 0;
+   color: #ffff;
+}
+
+
+/* PRIMERAS NOTICIAS /* 
+
+/* Ordena nuestras seccion de noticias, añade color, con ayuda del grid y template
+nos proporciona una cuadricula por columna. Gap nos especifica el canal de columnas. */
+.new-card{
+
+   color: #ffff;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 25px;
+   margin: 10px 0;
+   }
+
+
+.new-card img{
+
+   width: 238px;
+   height: 180px;
+   
+   }
+
+.new-card h2{
+   
+      font-size: 20px;
+      margin: 10px 0;
+   
+   }
+
+   .new-card a{
+   
+   
+      padding: 10px 0;
+      color: #ffff;
+      text-transform:uppercase;
+      display: inline-block;
+      font-weight: bold;
+   }
+
+   .new-card a:hover{
+      text-decoration: underline;
+   }
+
+/* SEGUNDAS NOTICIAS */
+
+.new-card1{
+
+      color: #ffff;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 25px;
+      margin: 10px 0;
+      }
+
+.new-card1 img{
+
+         width: 238px;
+         height: 180px;
+         
+}
+
+.new-card1 h2{
+
+   font-size: 20px;
+   margin: 10px 0;
+
+}
+
+.new-card1 a{
+
+
+   padding: 10px 0;
+   color: #ffff;
+   text-transform:uppercase;
+   display: inline-block;
+   font-weight: bold;
+}
+
+.new-card1 a:hover{
+   text-decoration: underline;
+}
+
+/****************************************************************************/
+
+ /* BANNER 1 NOTICIA 1 */
+.card-banner{
+
+width: 100%;
+height: 350px;
+background: url('./Imagenes/jj.jpg') no-repeat center center/cover;
+margin-bottom: 40px;
+}
+
+.card-banner .content{
+
+   width: 50%;
+   padding: 100px 0 0 30px;
+   color: #ffffFF;
+
+}
+
+.card-banner p,
+.card-banner h2{
+      margin: 10px 0 20px;
+}
+
+
+.card-banner{
+
+width: 100%;
+height: 350px;
+background: url('./Imagenes/jj.jpg') no-repeat center center/cover;
+margin-bottom: 40px;
+}
+
+.card-banner .container{
+
+   width: 50%;
+   padding: 100px 0 0 30px;
+   color: #ffff;
+
+}
+
+.card-banner p,
+.card-banner h2{
+      margin: 10px 0 20px;
+}
+
+/* BANNER 2 SECCION NOTICIAS 2*/
+
+.card-banner1{
+
+   width: 100%;
+   height: 350px;
+   background: url('./Imagenes/BANNER2.jpg') no-repeat center center/cover;
+   margin-bottom: 40px;
+   }
+   
+   .card-banner1 .content{
+   
+      width: 50%;
+      padding: 100px 0 0 30px;
+      color: #ffff;
+   
+   }
+   
+   .card-banner1 p,
+   .card-banner1 h2{
+         margin: 10px 0 20px;
+   }
+
+   /*BOTON ESCUCHAR ELEMENTO CLICK*/
+   .menu-btn{
+      position: absolute;
+      cursor: pointer;
+      top: 15px;
+      right: 30px;
+      color: #ffff;
+      z-index: 2;
+      font-size: 1.5rem;
+      display: none;
+
+   }
+
+/* Showcase --> Seccion foto */
+.showcase{
+   color:  #ffff;
+   width: 100%;
+   height: 550px;
+   background: url('./Imagenes/Noticiaprincipal.jpg') no-repeat center center/cover;
+   padding-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-end;
+   margin-bottom: 10px;
+   
+}
+
+.showcase h2,
+.showcase p{
+
+   margin-bottom: 10px;
+}
+
+
+/* BOTONES */
+.Botonsito{
+
+   cursor: pointer;
+   display: inline-block;
+   border: 0;
+   font-weight:  bold;
+   padding: 10px 20px;
+   background: #b3b1b1;
+   color: #ffff;
+   font-size: 15px;
+   border: 1px solid #fff;
+   margin: 10px 0; 
+}
+
+/* BOTONES */
+.Botonsito:hover {
+
+   opacity: .7;
+
+}
+
+/* Estamos editando, las etiquetas a, ul */
+a { color: #f4f4f4;
+    text-decoration: none;
+
+}
+
+ ul{
+
+    list-style: none;
+ }
+
+ /* NOS SIRVE PARA ALEJAR MÁS LAS COSAS DE LA PANRALLAZA  ->> DIMENSION */
+ .container{
+
+   width: 90%;
+   margin: auto;
+}
+
+ 
+ /* EDITACION DE BARRA DE MENU */
+ .nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+ }
+
+ /* EDITACION DEL LOGO */
+
+ .Nav-brand{
+
+   width: 50px;
+}
+
+ /* Nav left -> nos acomoda las secciones horizontal */
+
+ .nav-main ul{
+
+   display:flex;
+}
+
+ .nav-main ul li{
+
+    padding: 10px;
+
+ }
+
+ .nav-main ul li a{
+
+   padding: 20px;
+ }
+
+
+ .nav-main ul.nav-menu1{
+
+    flex: 1;
+    margin-left: 20px;
+
+ }
+
+ .nav-main ul li a:hover{
+    
+    border-bottom: 2px solid #ffff;
+ }
+
+ .sector-social{
+      margin: 50px
+ }
+ .sector-social p{
+
+   text-align: center;
+   font-size: 30px;
+   margin-bottom: 20px;
+   color: #ffff;
+ }
+
+ .links
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.links a,
+.links i{
+   margin: 0 30px;
+   font-size: 2rem;
+}
+
+/* FOOTER LINKS */
+
+.footer{
+
+   background: #2f3640;
+   color: #616161;
+   font-size: 12px;
+   padding: 35px 0;
+
+}
+
+.footer-container{
+
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 10px;
+   align-items: flex-start;
+   justify-content: center;
+}
+.footer-containter ul{
+
+   margin: 0 auto;
+}
+
+/*Altura de las listas del footer*/
+.footer-container ul li{
+
+   line-height: 2.5;
+}
+
+.footer{
+
+   text-align: center;
+   background: #2f3640;
+   font-size: 12px;
+   font-family: 'Ubuntu';
+   padding: 20px;
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+@media(max-width: 700px){
+
+   .menu-btn{
+      display: block
+   }
+
+   .nav-main ul.nav-menu1{
+
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #351046;
+      height: 100%;
+      padding: 30px;
+      opacity: .9;
+      transform: translateX(-400px);
+      transition: transform .5s ease-in-out;
+   }
+
+   /* AÑADIR Y QUITAR LA BARRA LATERAL*/
+   .nav-main ul.nav-menu1.show{
+      transform: translateX(-20px);
+   }
+
+
+   /*Menu lateral*/
+   nav-main ul.nav-menu1 li{
+
+      padding: 20px;
+      font-size: 14px;
+   }
+
+   .nav-main ul.nav-menu-right{
+      margin-right: 40px;
+   }
+
+
+   .new-card{
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .new-card1{
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .card-banner .content,
+   .card-banner1 .content{
+
+      width: 80%;
+   }
+
+   .footer .footer-container{
+
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+
+
+
+}
+
+@media(max-width: 500px){
+   .new-card{
+      grid-template-columns: 1fr;
+   }
+   .new-card1{
+      grid-template-columns: 1fr;
+   }
+   .new-card img{
+      height: 270px;
+   }
+   .new-card1 img{
+      height: 270px;
+   }
+
+   .card-banner .content,
+   .card-banner1 .content
+   {
+
+      width: 100%;
+      padding: 60px 20;
+
+   }
+
+   .footer .footer-container{
+
+
+      grid-template-columns: 1fr;
+   }
+
+}
